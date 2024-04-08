@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CEO</title>
+
+	<link rel="stylesheet" type="text/css" href="css/nav.css">
+	<link rel="stylesheet" type="text/css" href="css/ceo/ceo-pg.css">
+	<script src="js/Nav_Handler.js"></script>
+
+	<script>
+
+	</script>
+
+	<style>
+	/*	.page{
+			border: 1px solid red;
+			height: 95vh; 
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-content: center;
+		}*/
+
+		h1{
+			position: absolute;
+			top: 1em;
+			left: calc(50% - 5em);
+			color: khaki;
+			margin: auto;
+			z-index: 10;
+		} 
+
+		.ceo-intro{
+			width: 75%;
+			font-size: 1.5em;
+			font-weight: bold;
+			margin: auto;
+		/*	padding: 0 10%;*/
+		}
+
+	</style>
+
+</head>
+<body onload="init()">
+
+    <nav id="nav-cntnr-id" class="nav-cntnr" onmouseleave = "NavHandler.mouseLeave()">
+    	<div class="nav-label-container">
+    		<label class="nav-label" onmouseover="NavHandler.showHide()">Nav</label>
+    	</div>
+		<div id="nav-dropdown-id" class="nav-dropdown hide-dropdown">
+		    <a href="index.html">Home</a>
+		    <label><u>Departments</u></label>
+		    <div class="dept-container">
+			    <a href="engineering.html">Engineering</a>
+				<a href="drafting.html">Drafting</a>
+				<a href="technician.html">Technician</a>
+				<a href="computer.html">Computer</a>
+				<a href="education.html">Education</a>
+				<a href="media.html">Media</a>
+			</div>
+		</div>
+    <!--    <div id="nav-bottom-id"></div>  -->
+    </nav>  
+
+	<div class="page">
+		<h1>Welcome to the CEO page</h1>
+		<div>
+			<label class="ceo-intro">My name is Bob Englert.</label>
+			<p class="ceo-intro">I am the CEO of DB&E Inc. DB&E stands for Design, Build and Educate, which embodies the Company's very essence. </p>
+			<p class="ceo-intro">As you may know, last year (1970) Texas Instruments (TI) introduced the 74-- series of integrated circuits (IC's). We believe that these chips will allow us the opportunity to build a functional 8-bit Computer. While it will be somewhat limited in capability, future IC's with enhanced capability, will most assuredly open the door to more powerful computers. It would not be surprizing if these future machines become an integral part of our very personal lives!</p>
+	    </div>
+	</div>
+
+
+
+    <script>
+    	function init(){
+    		// initialize
+    		NavHandler.init();
+    	}
+    </script>
+
+</body>
+</html>
